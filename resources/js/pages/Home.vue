@@ -30,7 +30,7 @@
           </p>
           <p class="app-home-page__description">
             Welkom bij Stucadoorsbedrijf D&V, waar vakmanschap, jarenlange ervaring en moderne technieken samenkomen. Wij zijn de specialist als het gaat om hoogwaardig stucwerk, duurzame gevelafwerking en strak sauswerk. Of het nu gaat om een renovatieproject, nieuwbouw of het herstellen van bestaande muren, wij leveren kwaliteit die zichtbaar en voelbaar is.
-Neem vandaag nog contact met ons op voor een vrijblijvende offerte of persoonlijk advies.
+            Neem vandaag nog contact met ons op voor een vrijblijvende offerte of persoonlijk advies.
           </p>
         </div>
       </div>
@@ -138,7 +138,6 @@ export default {
 .app-home-page__hero-button--primary:hover {
   background-color: #a5001f;
   border-color: #a5001f;
-  transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(133, 0, 15, 0.3);
 }
 
@@ -151,7 +150,6 @@ export default {
 .app-home-page__hero-button--secondary:hover {
   background-color: white;
   color: #85000f;
-  transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
