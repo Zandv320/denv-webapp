@@ -1,0 +1,23 @@
+environment_variables:
+  cluster: swis-acc
+  namespace: ${DDEV_PROJECT}
+
+auth_command:
+  service: host
+  command: |
+    response='503'; while [[ ${response} = '503' ]]; do response="$(curl --no-progress-meter -m .5 "https://swis-scaler.acc.sw.is/check?url=${namespace}.acc.sw.is" 2>/dev/null || true)" ; if [[ ${response} = '503' ]]; then sleep 1 ; fi ; done
+    kubectl --cluster=${cluster} --namespace=${namespace} exec deployment/cli -- env VAULT_LOG_LEVEL=warn /vault/vault-env sh
+
+db_pull_command:
+  service: host
+  command: |
+    dump_file=$(date +%s)-dump.sql
+    kubectl --cluster=${cluster} --namespace=${namespace} exec deployment/cli -- env VAULT_LOG_LEVEL=warn /vault/vault-env drush sql:dump --result-file="/tmp/${dump_file}" --extra="--skip-ssl" --extra-dump="--skip-ssl --no-tablespaces"
+    rsync -avz --rsh='sh -c "kubectl --cluster=${cluster} --namespace=${namespace} exec --stdin deployment/cli -- $@"' fake-remote-host:/tmp/${dump_file} ${DDEV_APPROOT}/.ddev/.downloads/db.sql --remove-source-files
+
+files_pull_command:
+  service: host
+  command: |
+    if [ "$(sed -n "s/STAGE_FILE_PROXY=//p" .env)" != '0' ]; then ddev drush install stage_file_proxy -y ; fi
+    if [ "$(sed -n "s/STAGE_FILE_PROXY=//p" .env)" = '0' ]; then rsync -avz --rsh='sh -c "kubectl --cluster=${cluster} --namespace=${namespace} exec --stdin deployment/cli -- $@"' fake-remote-host:./storage/uploads-public ${DDEV_APPROOT}/storage/ ; fi
+    rsync -avz --rsh='sh -c "kubectl --cluster=${cluster} --namespace=${namespace} exec --stdin deployment/cli -- $@"' fake-remote-host:./storage/uploads-private ${DDEV_APPROOT}/storage/
