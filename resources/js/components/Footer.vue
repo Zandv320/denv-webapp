@@ -154,8 +154,6 @@ export default {
   margin-bottom: 1rem;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__subtitle {
@@ -165,8 +163,6 @@ export default {
   margin-bottom: 1rem;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__description {
@@ -174,8 +170,6 @@ export default {
   line-height: 1.6;
   margin-bottom: 1.5rem;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Social Icons */
@@ -224,8 +218,6 @@ export default {
   transition: color 0.2s ease;
   font-weight: 500;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__nav-link:hover,
@@ -245,8 +237,6 @@ export default {
   padding: 0.375rem 0;
   font-weight: 500;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Contact */
@@ -261,8 +251,6 @@ export default {
   line-height: 1.6;
   margin: 0;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__contact-link {
@@ -270,8 +258,6 @@ export default {
   text-decoration: none;
   transition: color 0.2s ease;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__contact-link:hover {
@@ -298,8 +284,6 @@ export default {
   margin: 0;
   font-size: 0.875rem;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__bottom-links {
@@ -313,8 +297,6 @@ export default {
   font-size: 0.875rem;
   transition: color 0.2s ease;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer__bottom-link:hover {

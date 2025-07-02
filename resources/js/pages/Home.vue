@@ -13,9 +13,9 @@
     <div class="app-home-page__container">
       <div class="app-home-page__content">
         <div class="app-home-page__card">
-          <p class="app-home-page__intro">
+          <h2 class="app-home-page__intro">
             Vakmanschap dat je ziet, kwaliteit die je voelt.
-          </p>
+          </h2>
           <p class="app-home-page__description">
             Welkom bij Stucadoorsbedrijf D&V, waar vakmanschap, jarenlange ervaring en moderne technieken samenkomen. Wij zijn de specialist als het gaat om hoogwaardig stucwerk, duurzame gevelafwerking en strak sauswerk. Of het nu gaat om een renovatieproject, nieuwbouw of het herstellen van bestaande muren, wij leveren kwaliteit die zichtbaar en voelbaar is.
             Neem vandaag nog contact met ons op voor een vrijblijvende offerte of persoonlijk advies.
@@ -75,12 +75,12 @@ export default {
 <style scoped>
 .app-home-page {
   min-height: calc(100vh - 80px);
-  background-color: #f9fafb;
+    background-color: #f1f3f4;
 }
 
 /* Main Content */
 .app-home-page__container {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 1.5rem;
 }
@@ -90,32 +90,47 @@ export default {
 }
 
 .app-home-page__card {
-  background: #8b1725;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 30px rgba(139, 23, 37, 0.4), 0 4px 15px rgba(0, 0, 0, 0.4);
-  padding: 1.5rem;
-  margin-bottom: 3rem;
+    background: #8b1725;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(139, 23, 37, 0.4), 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-home-page__card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(139, 23, 37, 0.5), 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 .app-home-page__intro {
-  font-size: 1.125rem;
+  font-size: 1.250rem;
+  font-weight: 500;
   color: #ffffff;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.6;
 }
 
 .app-home-page__description {
   color: #f3f4f6;
   line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
 }
 
 /* Video Section */
 .app-home-page__video-section {
-  background: #8b1725;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(139, 23, 37, 0.4), 0 4px 15px rgba(0, 0, 0, 0.4);
+    background: #8b1725;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(139, 23, 37, 0.4), 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-home-page__video-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(139, 23, 37, 0.5), 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 .app-home-page__video-title {
@@ -123,6 +138,7 @@ export default {
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   line-height: 1.2;
 }
@@ -158,6 +174,7 @@ export default {
   margin-top: 1rem;
   color: #f3f4f6;
   font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1.6;
 }
 
