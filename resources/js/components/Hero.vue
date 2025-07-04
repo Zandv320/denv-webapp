@@ -50,7 +50,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .hero {
   position: relative;
   height: 50vh;

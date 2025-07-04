@@ -126,7 +126,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .footer {
   background: #1f2937;
   color: #f9fafb;
@@ -135,7 +135,7 @@ export default {
 }
 
 .footer__container {
-  max-width: 1280px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 3rem 1.5rem 0;
   display: grid;
