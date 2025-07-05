@@ -135,7 +135,7 @@ export default {
 }
 
 .footer__container {
-  max-width: 1800px;
+  max-width: 1900px;
   margin: 0 auto;
   padding: 3rem 1.5rem 0;
   display: grid;

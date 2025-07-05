@@ -92,13 +92,12 @@ export default {
 
 <style lang='scss'>
 .app-home-page {
-  min-height: calc(100vh - 80px);
   background-color: #f1f3f4;
 }
 
 /* Main Content */
 .app-home-page__container {
-  max-width: 1800px;
+  max-width: 1900px;
   margin: 0 auto;
   padding: 1.5rem;
 }
@@ -203,6 +202,10 @@ export default {
 @media (max-width: 480px) {
   .app-home-page__container {
     padding: 0.75rem;
+  }
+
+  .app-home-page__content {
+    padding: 1rem 0;
   }
 
   .app-home-page__video-title {
