@@ -199,6 +199,8 @@ export default {
 .base-card--secondary .base-card__title,
 .base-card--accent .base-card__title {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.850rem;
+  font-weight: 500;
 }
 
 .base-card--primary .base-card__text,

@@ -4,8 +4,6 @@
     <Hero
       title="Onze Projecten"
       subtitle="Bekijk de kwaliteit van ons vakmanschap in uitgevoerde projecten"
-      image-src="/images/projects-hero.jpg"
-      image-alt="Overzicht van projecten door Stucadoorsbedrijf D&V"
       :buttons="heroButtons"
     />
 
@@ -208,10 +206,10 @@
                 Offerte Aanvragen
               </router-link>
               <router-link
-                to="/werkzaamheden"
+                to="/over-ons"
                 class="app-projects-page__cta-button app-projects-page__cta-button--secondary"
               >
-                Onze Diensten
+                Over ons
               </router-link>
             </div>
           </div>
@@ -236,8 +234,8 @@ export default {
     return {
       heroButtons: [
         {
-          text: 'Bekijk Onze Diensten',
-          to: '/werkzaamheden',
+          text: 'Over ons',
+          to: '/over-ons',
           type: 'primary'
         },
         {
@@ -253,8 +251,6 @@ export default {
 
 <style lang="scss" scoped>
 .app-projects-page {
-  min-height: calc(100vh - 80px);
-  background: linear-gradient(135deg, #f1f3f4 0%, #e2e8f0 100%);
   position: relative;
   overflow: hidden;
 }

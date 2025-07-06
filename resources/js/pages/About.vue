@@ -3,9 +3,7 @@
     <!-- Hero Section -->
     <Hero
       title="Over Stucadoorsbedrijf D&V"
-      subtitle="Meer dan 15 jaar ervaring in vakmanschap en kwaliteit"
-      image-src="/images/about-hero.jpg"
-      image-alt="Het ervaren team van Stucadoorsbedrijf D&V"
+      subtitle="Meer dan 25 jaar ervaring in vakmanschap en kwaliteit"
       :buttons="heroButtons"
     />
 
@@ -28,7 +26,7 @@
             <img src="/images/team.jpg" alt="Het team van D&V" class="app-about-page__story-image"/>
             <div class="app-about-page__story-text">
               <p class="base-card__text">
-                Stucadoorsbedrijf D&V werd opgericht in 2008 met een eenvoudige missie: het leveren van
+                Stucadoorsbedrijf D&V werd opgericht in 1999 met een eenvoudige missie: het leveren van
                 hoogwaardig stucwerk met oog voor detail en klanttevredenheid. Wat begon als een kleine
                 onderneming, is uitgegroeid tot een gerespecteerd bedrijf in de regio.
               </p>
@@ -41,10 +39,44 @@
           </div>
         </BaseCard>
 
+         <!-- Team Section -->
+        <BaseCard
+          variant="secondary"
+          size="large"
+          :hoverable="false"
+          class="app-about-page__team-card"
+        >
+          <template #header>
+            <h2 class="base-card__title">Ons Ervaren Team</h2>
+          </template>
+
+          <div class="app-about-page__team-grid">
+            <div class="app-about-page__team-member">
+              <img src="/images/person.svg" alt="Dennis - Oprichter" class="app-about-page__team-photo"/>
+              <h4 class="app-about-page__team-name">Dennis Dubbelaar</h4>
+              <p class="app-about-page__team-role">Oprichter & Projectleider</p>
+              <p class="app-about-page__team-description">
+                Met meer dan 20 jaar ervaring in de bouw en specialisatie in stucwerk,
+                leidt Dennis elk project met precisie en vakmanschap.
+              </p>
+            </div>
+
+            <div class="app-about-page__team-member">
+              <img src="/images/persons.svg" alt="Ons vakkundige team" class="app-about-page__team-photo"/>
+              <h4 class="app-about-page__team-name">Ons Vakteam</h4>
+              <p class="app-about-page__team-role">Gecertificeerde Stucadoors</p>
+              <p class="app-about-page__team-description">
+                Ons team bestaat uit ervaren vakspecialisten die samen zorgen voor
+                de uitvoering van elk project volgens de hoogste kwaliteitseisen.
+              </p>
+            </div>
+          </div>
+        </BaseCard>
+
         <!-- Mission & Vision Cards -->
         <div class="app-about-page__mission-vision">
           <BaseCard
-            variant="secondary"
+            variant="accent"
             size="medium"
             :hoverable="false"
             class="app-about-page__mission-card"
@@ -77,50 +109,6 @@
             </p>
           </BaseCard>
         </div>
-
-        <!-- Team Section -->
-        <BaseCard
-          variant="white"
-          size="large"
-          :hoverable="false"
-          class="app-about-page__team-card"
-        >
-          <template #header>
-            <h2 class="base-card__title">Ons Ervaren Team</h2>
-          </template>
-
-          <div class="app-about-page__team-grid">
-            <div class="app-about-page__team-member">
-              <img src="/images/dennis.jpg" alt="Dennis - Medeoprichter" class="app-about-page__team-photo"/>
-              <h4 class="app-about-page__team-name">Dennis van der Berg</h4>
-              <p class="app-about-page__team-role">Medeoprichter & Projectleider</p>
-              <p class="app-about-page__team-description">
-                Met meer dan 20 jaar ervaring in de bouw en specialisatie in stucwerk,
-                leidt Dennis elk project met precisie en vakmanschap.
-              </p>
-            </div>
-
-            <div class="app-about-page__team-member">
-              <img src="/images/vincent.jpg" alt="Vincent - Medeoprichter" class="app-about-page__team-photo"/>
-              <h4 class="app-about-page__team-name">Vincent Jansen</h4>
-              <p class="app-about-page__team-role">Medeoprichter & Specialist Gevelwerk</p>
-              <p class="app-about-page__team-description">
-                Vincent is onze expert in gevelafwerking en renovatie. Zijn oog voor detail
-                zorgt voor perfecte afwerkingen bij elk project.
-              </p>
-            </div>
-
-            <div class="app-about-page__team-member">
-              <img src="/images/team-member.jpg" alt="Ons vakkundige team" class="app-about-page__team-photo"/>
-              <h4 class="app-about-page__team-name">Ons Vakteam</h4>
-              <p class="app-about-page__team-role">Gecertificeerde Stucadoors</p>
-              <p class="app-about-page__team-description">
-                Ons team bestaat uit ervaren vakspecialisten die samen zorgen voor
-                de uitvoering van elk project volgens de hoogste kwaliteitseisen.
-              </p>
-            </div>
-          </div>
-        </BaseCard>
 
         <!-- Values Section -->
         <BaseCard
@@ -202,10 +190,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .app-about-page {
-  min-height: calc(100vh - 80px);
-  background: linear-gradient(135deg, #f1f3f4 0%, #e2e8f0 100%);
   position: relative;
   overflow: hidden;
 }

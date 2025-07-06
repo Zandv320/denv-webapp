@@ -4,8 +4,6 @@
     <Hero
       title="Contact"
       subtitle="Neem contact op voor een vrijblijvende offerte of persoonlijk advies"
-      image-src="/images/contact-hero.jpg"
-      image-alt="Contact opnemen met Stucadoorsbedrijf D&V"
       :buttons="heroButtons"
     />
 
@@ -15,76 +13,7 @@
 
         <!-- Contact Information and Form -->
         <div class="app-contact-page__main-grid">
-
-          <!-- Contact Information Card -->
-          <BaseCard
-            variant="primary"
-            size="large"
-            :hoverable="false"
-            class="app-contact-page__info-card"
-          >
-            <template #header>
-              <h2 class="base-card__title">Contactgegevens</h2>
-            </template>
-
-            <div class="app-contact-page__info-content">
-              <div class="app-contact-page__info-item">
-                <div class="app-contact-page__info-icon">📍</div>
-                <div class="app-contact-page__info-details">
-                  <h4 class="app-contact-page__info-title">Adres</h4>
-                  <p class="base-card__text">
-                    Voorbeeldstraat 123<br>
-                    1234 AB Voorbeeldstad<br>
-                    Nederland
-                  </p>
-                </div>
-              </div>
-
-              <div class="app-contact-page__info-item">
-                <div class="app-contact-page__info-icon">📞</div>
-                <div class="app-contact-page__info-details">
-                  <h4 class="app-contact-page__info-title">Telefoon</h4>
-                  <p class="base-card__text">
-                    <a href="tel:+31612345678" class="app-contact-page__link">
-                      +31 6 12 34 56 78
-                    </a>
-                  </p>
-                  <p class="app-contact-page__info-note">
-                    Bereikbaar: Ma-Vr 08:00-18:00
-                  </p>
-                </div>
-              </div>
-
-              <div class="app-contact-page__info-item">
-                <div class="app-contact-page__info-icon">✉️</div>
-                <div class="app-contact-page__info-details">
-                  <h4 class="app-contact-page__info-title">Email</h4>
-                  <p class="base-card__text">
-                    <a href="mailto:info@stucadoorsbedrijfdv.nl" class="app-contact-page__link">
-                      info@stucadoorsbedrijfdv.nl
-                    </a>
-                  </p>
-                  <p class="app-contact-page__info-note">
-                    Wij reageren binnen 24 uur
-                  </p>
-                </div>
-              </div>
-
-              <div class="app-contact-page__info-item">
-                <div class="app-contact-page__info-icon">🏢</div>
-                <div class="app-contact-page__info-details">
-                  <h4 class="app-contact-page__info-title">Bedrijfsinformatie</h4>
-                  <p class="base-card__text">
-                    KvK: 12345678<br>
-                    BTW: NL123456789B01<br>
-                    Verzekerd bij: Interpolis
-                  </p>
-                </div>
-              </div>
-            </div>
-          </BaseCard>
-
-          <!-- Contact Form Card -->
+                      <!-- Contact Form Card -->
           <BaseCard
             variant="white"
             size="large"
@@ -92,7 +21,7 @@
             class="app-contact-page__form-card"
           >
             <template #header>
-              <h2 class="base-card__title">Offerte Aanvragen</h2>
+              <h2 class="app-contact-page__offerte-title base-card__title">Offerte Aanvragen</h2>
               <p class="app-contact-page__form-subtitle">
                 Vul onderstaand formulier in en wij nemen binnen 24 uur contact met u op.
               </p>
@@ -191,6 +120,74 @@
             </form>
           </BaseCard>
 
+
+          <!-- Contact Information Card -->
+          <BaseCard
+            variant="primary"
+            size="large"
+            :hoverable="false"
+            class="app-contact-page__info-card"
+          >
+            <template #header>
+              <h2 class="base-card__title">Contactgegevens</h2>
+            </template>
+
+            <div class="app-contact-page__info-content">
+              <div class="app-contact-page__info-item">
+                <div class="app-contact-page__info-icon">📍</div>
+                <div class="app-contact-page__info-details">
+                  <h4 class="app-contact-page__info-title">Adres</h4>
+                  <p class="base-card__text">
+                    Voorbeeldstraat 123<br>
+                    1234 AB Voorbeeldstad<br>
+                    Nederland
+                  </p>
+                </div>
+              </div>
+
+              <div class="app-contact-page__info-item">
+                <div class="app-contact-page__info-icon">📞</div>
+                <div class="app-contact-page__info-details">
+                  <h4 class="app-contact-page__info-title">Telefoon</h4>
+                  <p class="base-card__text">
+                    <a href="tel:+31612345678" class="app-contact-page__link">
+                      +31 6 12 34 56 78
+                    </a>
+                  </p>
+                  <p class="app-contact-page__info-note">
+                    Bereikbaar: Ma-Vr 08:00-18:00
+                  </p>
+                </div>
+              </div>
+
+              <div class="app-contact-page__info-item">
+                <div class="app-contact-page__info-icon">✉️</div>
+                <div class="app-contact-page__info-details">
+                  <h4 class="app-contact-page__info-title">Email</h4>
+                  <p class="base-card__text">
+                    <a href="mailto:info@stucadoorsbedrijfdv.nl" class="app-contact-page__link">
+                      info@stucadoorsbedrijfdv.nl
+                    </a>
+                  </p>
+                  <p class="app-contact-page__info-note">
+                    Wij reageren binnen 24 uur
+                  </p>
+                </div>
+              </div>
+
+              <div class="app-contact-page__info-item">
+                <div class="app-contact-page__info-icon">🏢</div>
+                <div class="app-contact-page__info-details">
+                  <h4 class="app-contact-page__info-title">Bedrijfsinformatie</h4>
+                  <p class="base-card__text">
+                    KvK: 12345678<br>
+                    BTW: NL123456789B01<br>
+                    Verzekerd bij: Interpolis
+                  </p>
+                </div>
+              </div>
+            </div>
+          </BaseCard>
         </div>
 
         <!-- Additional Information Cards -->
@@ -245,12 +242,13 @@
             <p class="base-card__text">
               Wij zijn actief in de volgende regio's:
             </p>
-            <ul class="app-contact-page__areas-list">
-              <li>Amsterdam en omgeving</li>
-              <li>Utrecht en omgeving</li>
-              <li>Hilversum en omgeving</li>
-              <li>Almere en omgeving</li>
-              <li>En omliggende gemeenten</li>
+            <ul class="app-contact-page__areas-list base-card__text">
+              <li>Den Haag en omgeving</li>
+              <li>Rotterdam en omgeving</li>
+              <li>Leiden en omgeving</li>
+              <li>Delft en omgeving</li>
+              <li>Zoetermeer en omgeving</li>
+              <li>En geheel Zuid-Holland</li>
             </ul>
             <p class="base-card__text app-contact-page__areas-note">
               Ligt uw project buiten ons standaard werkgebied?
@@ -300,20 +298,34 @@ export default {
       isSubmitting: false
     }
   },
-  methods: {
+ methods: {
     async submitForm() {
       this.isSubmitting = true;
 
       try {
-        // Here you would typically send the form data to your backend
-        console.log('Form submitted:', this.form);
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || ''
+          },
+          body: JSON.stringify(this.form)
+        });
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        const data = await response.json();
 
-        // Show success message and reset form
-        alert('Bedankt voor uw aanvraag! Wij nemen binnen 24 uur contact met u op.');
-        this.resetForm();
+        if (data.success) {
+          alert(data.message);
+          this.resetForm();
+        } else {
+          if (data.errors) {
+            // Handle validation errors
+            const errorMessages = Object.values(data.errors).flat().join('\n');
+            alert('Validatiefouten:\n' + errorMessages);
+          } else {
+            alert(data.message || 'Er is een fout opgetreden.');
+          }
+        }
 
       } catch (error) {
         console.error('Error submitting form:', error);
@@ -337,10 +349,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .app-contact-page {
   min-height: calc(100vh - 80px);
-  background: linear-gradient(135deg, #f1f3f4 0%, #e2e8f0 100%);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -388,6 +400,12 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+}
+
+.app-contact-page__offerte-title {
+    text-shadow: none;
+    font-size: 1.850rem;
+    font-weight: 500;
 }
 
 /* Contact Information */

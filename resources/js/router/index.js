@@ -11,8 +11,8 @@ const routes = [
     component: Home
   },
   {
-    path: '/werkzaamheden',
-    name: 'Werkzaamheden',
+    path: '/over-ons',
+    name: 'Over ons',
     component: About
   },
   {

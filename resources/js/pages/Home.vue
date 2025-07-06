@@ -18,7 +18,7 @@
           :hoverable="false"
           class="app-home-page__intro-card"
         >
-            <h2 class="app-home-page__intro-card-title">
+            <h2 class="base-card__title app-home-page__intro-card-title">
                 Vakmanschap dat je ziet, kwaliteit die je voelt.
             </h2>
             <img src="/images/painter.jpg" alt="Professional painter at work" class="app-home-page__painter-image"/>
@@ -91,13 +91,10 @@ export default {
 </script>
 
 <style lang='scss'>
-.app-home-page {
-  background-color: #f1f3f4;
-}
 
 /* Main Content */
 .app-home-page__container {
-  max-width: 1900px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 1.5rem;
 }
@@ -114,8 +111,6 @@ export default {
 }
 
 .app-home-page__intro-card-title {
-  font-size: 1.875rem;
-  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 1rem;
   text-align: center;
@@ -135,10 +130,10 @@ export default {
 }
 
 .app-home-page__video-title {
-  font-size: 1.875rem;
-  font-weight: bold;
-  text-align: center;
   line-height: 1.2;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .app-home-page__video-container {

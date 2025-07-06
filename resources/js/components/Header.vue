@@ -10,7 +10,7 @@
         <nav class="app-header__navigation app-header__navigation--desktop">
             <ul class="app-header__navigation-list">
                 <li><router-link to="/">Welkom</router-link></li>
-                <li><router-link to="/werkzaamheden">Werkzaamheden</router-link></li>
+                <li><router-link to="/over-ons">Over ons</router-link></li>
                 <li><router-link to="/projecten">Projecten</router-link></li>
                 <li><router-link to="/contact">Contact</router-link></li>
             </ul>
@@ -31,7 +31,7 @@
         <nav class="app-header__navigation--mobile" :class="{ 'open': isMobileMenuOpen }">
             <ul class="app-header__navigation-list--mobile">
                 <li><router-link to="/" @click="closeMobileMenu">Welkom</router-link></li>
-                <li><router-link to="/werkzaamheden" @click="closeMobileMenu">Werkzaamheden</router-link></li>
+                <li><router-link to="/over-ons" @click="closeMobileMenu">Over ons</router-link></li>
                 <li><router-link to="/projecten" @click="closeMobileMenu">Projecten</router-link></li>
                 <li><router-link to="/contact" @click="closeMobileMenu">Contact</router-link></li>
             </ul>
