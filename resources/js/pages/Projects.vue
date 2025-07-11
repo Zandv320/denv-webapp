@@ -22,7 +22,7 @@
             class="app-projects-page__project-card"
           >
             <div class="app-projects-page__project-image-container">
-              <img src="/images/project-villa.jpg" alt="Luxe villa renovatie" class="app-projects-page__project-image"/>
+              <img src="/images/visual.jpg" alt="Luxe villa renovatie" class="app-projects-page__project-image"/>
               <div class="app-projects-page__project-overlay">
                 <span class="app-projects-page__project-status">Voltooid 2024</span>
               </div>
@@ -72,7 +72,7 @@
 
           <!-- Project 3: Nieuwbouw Woning -->
           <BaseCard
-            variant="accent"
+            variant="primary"
             size="large"
             :hoverable="true"
             class="app-projects-page__project-card"
@@ -113,7 +113,7 @@
             </div>
 
             <div class="app-projects-page__project-content">
-              <h3 class="base-card__title">Appartementencomplex</h3>
+              <h3 class="base-card__title">Appartementen complex</h3>
               <p class="base-card__text">
                 Grootschalig project voor een appartementencomplex met 24 wooneenheden.
                 Efficiënte uitvoering zonder concessies aan kwaliteit en afwerking.
@@ -156,7 +156,7 @@
 
           <!-- Project 6: Winkelcentrum -->
           <BaseCard
-            variant="accent"
+            variant="primary"
             size="large"
             :hoverable="true"
             class="app-projects-page__project-card"

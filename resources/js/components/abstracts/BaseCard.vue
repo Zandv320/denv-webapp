@@ -84,8 +84,8 @@ export default {
 }
 
 .base-card--accent {
-  background: linear-gradient(135deg, #ef4444 0%, #f87171 50%, #ef4444 100%);
-  color: #ffffff;
+    background: linear-gradient(135deg, #ffb300 0%, #ffcb2b 50%, #e08a00 100%);
+    color: #fffbe6;
 }
 
 .base-card--white {
@@ -166,8 +166,8 @@ export default {
 }
 
 .base-card--accent.base-card--hoverable:hover {
-  background: linear-gradient(135deg, #f87171 0%, #fca5a5 50%, #f87171 100%);
-  box-shadow: 0 15px 40px rgba(239, 68, 68, 0.5), 0 8px 25px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #ffcb2b 0%, #ffe066 50%, #ffb300 100%);
+    box-shadow: 0 15px 40px rgba(255, 179, 0, 0.5), 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 .base-card--white.base-card--hoverable:hover {

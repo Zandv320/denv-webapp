@@ -32,18 +32,17 @@ export default {
 
 .app-container::before {
   content: '';
-  position: fixed; /* Changed to fixed so it covers entire viewport */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-image: url('/images/background.png');
-  background-size: cover; /* Changed from contain to cover */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
-  opacity: 0.5;
+  opacity: 0.2;
   z-index: -2;
   pointer-events: none;
 }
